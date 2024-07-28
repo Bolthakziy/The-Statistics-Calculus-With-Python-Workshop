@@ -1,0 +1,31 @@
+import numpy as np
+
+decimal_array = np.random.rand(4, 3)
+
+print("This is \'decimal_array\'.")
+print(decimal_array)
+print()
+print("This is \'decimal_array[2]\'.")
+print(decimal_array[2])
+print()
+print("This is \'decimal_array[3, : 3]\'.")
+print(decimal_array[3, : 3])
+print()
+
+decimal_array2 = np.random.rand(3, 4, 5)
+
+print("This is \'decimal_array2\'.")
+print(decimal_array2)
+print()
+print("This is \'decimal_array2[2]\'.")
+print(decimal_array2[2])
+print()
+print("This is \'decimal_array2[1, 2 : 4, 3 :]\'")
+print(decimal_array2[1, 2 : 4, 3 :])
+print()
+print("This is \'reshaped decimal_array2\'.")
+print(decimal_array2.shape)
+print(np.reshape(decimal_array2, (6, 2, 5)))
+print()
+print("This is \'transposed reshaped decimal_array2\'.")
+print(decimal_array2.T)
